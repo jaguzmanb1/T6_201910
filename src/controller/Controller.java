@@ -285,13 +285,16 @@ public class Controller
 				Scanner sc2 = new Scanner(System.in);
 				String address = sc2.nextLine();
 				SeparateChainingHash<String, VOMovingViolation> hashTable = this.darChainingPorAddress(address);
-				aux = new Comparable[hashTable.size() - 1];
+				view.printMensage(Integer.toString(hashTable.size()));
+				aux = new Comparable[hashTable.size()];
+				view.printMensage(Integer.toString(aux.length));
+
 				int i = 0;
 				while(hashTable.keys().hasNext()){
-					aux[i] = hashTable.get((hashTable.keys().next()));
+					view.printMensage(Integer.toString(i));
 					i++;
 				}
-				view.printDatosMuestra(aux);
+				view.printMensage(Integer.toString(i));
 				
 				break;
 

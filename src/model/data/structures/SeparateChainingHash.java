@@ -13,7 +13,7 @@ public class SeparateChainingHash <K extends Comparable<K>, V> implements IHash<
 	private sequentialSearch<K, V>[] st;  
 	
 	public SeparateChainingHash(){ 
-		this(997);  
+		this(997);
 		}   
 	
 	public SeparateChainingHash(int M)   { 
