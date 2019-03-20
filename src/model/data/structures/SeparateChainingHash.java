@@ -17,7 +17,8 @@ public class SeparateChainingHash <K extends Comparable<K>, V> implements IHash<
 		}   
 	
 	public SeparateChainingHash(int M)   { 
-		this.M = M;   
+		this.M = M;
+		this.N = 0;
 		st = (sequentialSearch<K, V>[]) new sequentialSearch[M];  
 		for (int i = 0; i < M; i++)      
 			st[i] = new sequentialSearch();   
